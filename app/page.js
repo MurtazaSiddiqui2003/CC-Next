@@ -13,6 +13,9 @@ const projects = [
     alt: "Elegant floral event styling",
     href: "https://sterlingbloom.vercel.app",
     label: "Explore live site",
+    focus: "Build a polished digital presence for an event and floral design studio.",
+    approach: "Shape service storytelling, consultation entry points, responsive layouts, and an editable content workflow.",
+    deliverable: "Client website with booking pathways and a custom admin experience.",
   },
   {
     number: "02",
@@ -24,6 +27,9 @@ const projects = [
     alt: "Contemporary workspace and meeting area",
     href: "https://thecrccore.vercel.app",
     label: "Explore live site",
+    focus: "Present business services clearly while leaving room to manage content over time.",
+    approach: "Organize service information, testimonials, articles, and an admin workflow around a consistent site structure.",
+    deliverable: "Business website concept with a content-management experience.",
   },
   {
     number: "03",
@@ -35,6 +41,9 @@ const projects = [
     alt: "Fashion editorial shopping scene",
     href: "https://eishas.vercel.app",
     label: "Explore the concept",
+    focus: "Explore how related retail categories can sit under one cohesive digital brand.",
+    approach: "Work through category positioning, visual direction, and a shared browsing experience.",
+    deliverable: "Multi-category e-commerce concept and brand presentation.",
   },
   {
     number: "04",
@@ -44,9 +53,12 @@ const projects = [
     tags: ["React", "Motion", "Art direction"],
     image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=85",
     alt: "Minimal fashion editorial",
-    href: "https://forme.vercel.app",
+    href: "https://forme-mu-dun.vercel.app",
     github: "https://github.com/MurtazaSiddiqui2003/FORME",
     label: "Explore the experience",
+    focus: "Create a more editorial way to present fashion looks and visual stories.",
+    approach: "Experiment with typography, layout, visual hierarchy, and responsive React UI.",
+    deliverable: "Interactive lookbook-style web experience.",
   },
 ];
 
@@ -152,6 +164,14 @@ export default function Home() {
                 </div>
                 <p>{project.description}</p>
                 <div className="pills">{project.tags.map((tag) => <span className="pill" key={tag}>{tag}</span>)}</div>
+                <details className="case-study">
+                  <summary>Project notes <span aria-hidden="true">＋</span></summary>
+                  <div className="case-study-body">
+                    <div><span>FOCUS</span><p>{project.focus}</p></div>
+                    <div><span>APPROACH</span><p>{project.approach}</p></div>
+                    <div><span>DELIVERABLE</span><p>{project.deliverable}</p></div>
+                  </div>
+                </details>
                 <a className="project-link" href={project.href} target="_blank" rel="noreferrer">{project.label} <span>↗</span></a>
                 {project.github && <a className="project-link" href={project.github} target="_blank" rel="noreferrer" style={{ marginLeft: 18 }}>View source <span>↗</span></a>}
               </article>
@@ -222,12 +242,13 @@ export default function Home() {
             <h2>Let’s make your next idea real.</h2>
             <p>Tell me what you’re working on, what’s not working yet, or what you’d love to create. We’ll figure out a practical next step.</p>
           </div>
-          <a className="button" href="https://github.com/MurtazaSiddiqui2003" target="_blank" rel="noreferrer">Connect with me <span className="arrow">↗</span></a>
+          <a className="button" href="https://wa.me/923132799805?text=Hi%20Murtaza%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noreferrer">Message me on WhatsApp <span className="arrow">↗</span></a>
         </section>
 
         <footer className="footer">
           <a className="wordmark" href="#home"><span className="mark">ms.</span><span>Murtaza Siddiqui</span></a>
           <div className="footer-links">
+            <a href="https://wa.me/923132799805?text=Hi%20Murtaza%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noreferrer">WhatsApp ↗</a>
             <a href="https://github.com/MurtazaSiddiqui2003" target="_blank" rel="noreferrer">GitHub ↗</a>
             <a href="https://thecrccore.vercel.app" target="_blank" rel="noreferrer">CRC Core ↗</a>
             <a href="https://eishas.vercel.app" target="_blank" rel="noreferrer">Eisha’s ↗</a>
