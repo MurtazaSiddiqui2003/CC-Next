@@ -1,29 +1,33 @@
-# Murtaza Siddiqui — Personal Portfolio
+# Murtaza Siddiqui Portfolio
 
-A responsive, adaptive portfolio for multidisciplinary digital creator Murtaza Siddiqui. The site brings together web development, e-commerce, branding, social content, photography, and AI-assisted creative workflows.
-
-## Stack
-
-- Next.js App Router
-- React
-- CSS custom properties and responsive CSS
-- Light/dark theme switcher with saved preference
+A responsive Next.js portfolio for web development, e-commerce, branding, social content, photography, and AI-assisted creative work.
 
 ## Run locally
-
-Requires Node.js 20.9 or newer.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+## Private portfolio admin
 
-## Before launch
+The `/admin` dashboard manages project cards and case-study content. Project data lives in `content/projects.json`; saving from the dashboard updates that file through the GitHub Contents API and triggers the connected Vercel deployment.
 
-- Confirm the final portfolio repository name and public URL.
-- Add a direct email or preferred client-contact method.
-- Review all project descriptions and replace any placeholder/stock visuals with approved project screenshots.
-- Confirm which projects are public and client-safe to showcase.
-- Add custom domain and social metadata once the domain is chosen.
+Set these environment variables in **Vercel → Project → Settings → Environment Variables**:
+
+- `ADMIN_PASSWORD`: a unique, strong password for the admin.
+- `ADMIN_SESSION_SECRET`: a randomly generated secret of at least 32 characters used to sign the seven-day, HTTP-only session cookie.
+- `GITHUB_TOKEN`: a fine-grained GitHub token restricted to `MurtazaSiddiqui2003/CC-Next`, with **Contents: Read and write** permission.
+- `GITHUB_REPOSITORY`: defaults to `MurtazaSiddiqui2003/CC-Next`.
+- `GITHUB_BRANCH`: defaults to `main`; set to the branch that should receive content edits.
+
+Never place these secrets in client-side code or commit real values to GitHub. After adding or changing environment variables, redeploy the Vercel project.
+
+## Content workflow
+
+1. Open `/admin` and sign in with `ADMIN_PASSWORD`.
+2. Edit project details, tags, image URLs, live/GitHub links, and case-study fields.
+3. Save changes. The content is committed to the configured GitHub branch.
+4. Vercel builds the updated site; edits appear on the public portfolio after deployment succeeds.
+
+The first admin release edits projects and case studies. It does not yet manage every page section, testimonials, or media uploads. For images, use a stable HTTPS image URL until direct uploads are added.
