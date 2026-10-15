@@ -1,0 +1,75 @@
+[
+  {
+    "number": "01",
+    "name": "Sterling Bloom",
+    "category": "Client website",
+    "description": "A refined digital home for an event and floral design business, with service storytelling, consultation booking, and a custom content-editing experience.",
+    "tags": [
+      "Next.js",
+      "Responsive design",
+      "Admin experience"
+    ],
+    "image": "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1400&q=85",
+    "alt": "Elegant floral event styling",
+    "href": "https://sterlingbloom.vercel.app",
+    "label": "Explore live site",
+    "focus": "Build a polished digital presence for an event and floral design studio.",
+    "approach": "Shape service storytelling, consultation entry points, responsive layouts, and an editable content workflow.",
+    "deliverable": "Client website with booking pathways and a custom admin experience."
+  },
+  {
+    "number": "02",
+    "name": "CRC Core",
+    "category": "Business platform",
+    "description": "A business website built around services, case studies, articles, testimonials, and a password-protected admin workflow for managing content.",
+    "tags": [
+      "Next.js",
+      "MongoDB",
+      "CMS"
+    ],
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    "alt": "Contemporary workspace and meeting area",
+    "href": "https://thecrccore.vercel.app",
+    "label": "Explore live site",
+    "focus": "Present business services clearly while leaving room to manage content over time.",
+    "approach": "Organize service information, testimonials, articles, and an admin workflow around a consistent site structure.",
+    "deliverable": "Business website concept with a content-management experience."
+  },
+  {
+    "number": "03",
+    "name": "Eisha’s",
+    "category": "E-commerce concept",
+    "description": "A multi-store e-commerce concept bringing fashion, beauty, and jewelry under one umbrella, with distinct visual identities and a shared shopping experience.",
+    "tags": [
+      "E-commerce",
+      "Brand systems",
+      "Next.js"
+    ],
+    "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=85",
+    "alt": "Fashion editorial shopping scene",
+    "href": "https://eishas.vercel.app",
+    "label": "Explore the concept",
+    "focus": "Explore how related retail categories can sit under one cohesive digital brand.",
+    "approach": "Work through category positioning, visual direction, and a shared browsing experience.",
+    "deliverable": "Multi-category e-commerce concept and brand presentation."
+  },
+  {
+    "number": "04",
+    "name": "FORME",
+    "category": "Creative web experience",
+    "description": "An editorial visual experience exploring layout, typography, motion, and a more expressive approach to presenting a fashion lookbook.",
+    "tags": [
+      "React",
+      "Motion",
+      "Art direction"
+    ],
+    "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=85",
+    "alt": "Minimal fashion editorial",
+    "href": "https://forme-mu-dun.vercel.app",
+    "github": "https://github.com/MurtazaSiddiqui2003/FORME",
+    "label": "Explore the experience",
+    "focus": "Create a more editorial way to present fashion looks and visual stories.",
+    "approach": "Experiment with typography, layout, visual hierarchy, and responsive React UI.",
+    "deliverable": "Interactive lookbook-style web experience."
+  }
+]
